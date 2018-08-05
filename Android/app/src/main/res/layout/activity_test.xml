@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:background="#FFFFFF"
+    >
+
+    <Button
+        android:id="@+id/past"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="1sp"
+        android:layout_marginRight="1sp"
+        android:layout_rowWeight="1"
+        android:background="#283593"
+        android:elevation="10sp"
+        android:foreground="@drawable/ripple"
+        android:onClick="seepastvisitors"
+        android:shadowRadius="15"
+        android:text="        See Past Visitors        "
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_columnWeight="1"
+        android:id="@+id/emergency"
+        android:text="Add Emergency Contacts"
+        android:layout_rowWeight="1"
+        android:onClick="emergency"
+        android:background="#283593"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="1sp"
+        android:foreground="@drawable/ripple"
+
+        android:layout_marginBottom="1sp"
+        android:elevation="10sp"
+        android:shadowRadius="15"
+        />
+
+    <Button
+        android:id="@+id/fecerec"
+        android:text="Face Recognition"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:onClick="train"
+        android:background="#283593"
+        android:textColor="#FFFFFF"
+        android:foreground="@drawable/ripple"
+        android:layout_marginRight="1sp"
+        android:layout_marginTop="1sp"
+        android:elevation="10sp"
+        android:shadowRadius="15"
+        />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_columnWeight="1"
+        android:text="Logout"
+        android:layout_rowWeight="1"
+        android:onClick="Process_Logout"
+        android:background="#283593"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="1sp"
+        android:foreground="@drawable/ripple"
+        android:layout_marginTop="1sp"
+        android:elevation="10sp"
+        android:shadowRadius="15"
+
+        /></GridLayout>
+</FrameLayout>

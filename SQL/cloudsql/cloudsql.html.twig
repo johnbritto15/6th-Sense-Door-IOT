@@ -1,0 +1,18 @@
+<html>
+    <body>
+        {% if results %}
+            <h2>Visitors</h2>
+            {% for key,result in results %}
+                <div><input type="hidden" value="{{ result.security_id }}"> <br> 
+					 <img src="data:image/jpeg;base64,{{ images[key] }}"/><br>
+					 <p>{{ result.image_datetime }}</p></div>
+            {% endfor %}
+			
+        {% endif %}
+        <!--<form action="/" method="post">
+            <div>Name: <input name="name" /></div>
+            <div><textarea name="content" rows="3" cols="60"></textarea></div>
+            <div><input type="submit" value="Sign Guestbook"></div>
+        </form>-->
+    </body>
+</html>
